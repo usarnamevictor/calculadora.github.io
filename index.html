@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <form class="calculadora" name="calculadora">
+
+        <input class="tela" type="text" name="texto" readonly="">
+
+        <span class="num limpar" onclick="document.calculadora.texto.value =''">C</span>
+        <span class="num" onclick="document.calculadora.texto.value +='/'">/</span>
+        <span class="num" onclick="document.calculadora.texto.value +='*'">*</span>
+        <span class="num" onclick="document.calculadora.texto.value +='7'">7</span>
+        <span class="num" onclick="document.calculadora.texto.value +='8'">8</span>
+        <span class="num" onclick="document.calculadora.texto.value +='9'">9</span>
+        <span class="num" onclick="document.calculadora.texto.value +='-'">-</span>
+        <span class="num" onclick="document.calculadora.texto.value +='4'">4</span>
+        <span class="num" onclick="document.calculadora.texto.value +='5'">5</span>
+        <span class="num" onclick="document.calculadora.texto.value +='6'">6</span>
+        <span class="num" onclick="document.calculadora.texto.value +='+'">+</span>
+        <span class="num" onclick="document.calculadora.texto.value +='1'">1</span>
+        <span class="num" onclick="document.calculadora.texto.value +='2'">2</span>
+        <span class="num" onclick="document.calculadora.texto.value +='3'">3</span>
+        <span class="num igual" onclick="document.calculadora.texto.value = eval(calculadora.texto.value)">=</span>
+        <span class="num zero" onclick="document.calculadora.texto.value +='0'">0</span>
+        <span class="num" onclick="document.calculadora.texto.value +='.'">.</span>
+
+
+    </form>
+    
+</body>
+</html>
